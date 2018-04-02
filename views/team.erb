@@ -5,10 +5,10 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
 
+  <% @team_data.each do | k, v | %>
+    <h2><%= "#{@translation_hash[k]}: #{v}" %></h2>
+  <% end %>
 
  </body>
 </html>
-
-
